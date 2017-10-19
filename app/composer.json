@@ -6,6 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "a4x/laravel-wordpress": "0.0.9-beta",
+        "barryvdh/laravel-ide-helper": "v2.4.1",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"
