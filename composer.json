@@ -12,7 +12,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-
+    "laravel/installer": "^1.4"
   },
   "prefer-stable": true
 }
