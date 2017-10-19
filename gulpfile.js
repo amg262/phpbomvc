@@ -98,7 +98,7 @@ gulp.task('unzip', function () {
 gulp.task("serve", function () {
 
     browserSync.init({
-        proxy: "http://phpbomvc.dev/app/"
+        proxy: "http://phpbomvc.dev/app/public"
     });
 
 });
