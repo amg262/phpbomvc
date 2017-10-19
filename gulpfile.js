@@ -98,7 +98,7 @@ gulp.task('unzip', function () {
 gulp.task("serve", function () {
 
     browserSync.init({
-        proxy: "http://www.wordpress.dev/wp-admin/"
+        proxy: "http://phpbomvc.dev/app/"
     });
 
 });
@@ -109,8 +109,9 @@ gulp.task("watch", function () {
     gulp.watch(paths.home).on("change", browserSync.reload);
     gulp.watch('gulpfile.js').on("change", browserSync.reload);
     //gulp.watch(paths.assets).on("", browserSync.reload);
-    gulp.watch(paths.classes).on("change", browserSync.reload);
-    gulp.watch(paths.includes).on("add", browserSync.reload);
+    gulp.watch('app/').on("change", browserSync.reload);
+    gulp.watch('dist/').on("change", browserSync.reload);
+    gulp.watch('code/').on("change", browserSync.reload);
 });
 
 gulp.task("up", ["purge", "imagemin", "cssnano", "uglify", "serve", "watch"]);
